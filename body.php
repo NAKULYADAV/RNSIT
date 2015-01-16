@@ -1,4 +1,9 @@
 <html>
+<table height=0px>
+<td>
+<tr>
+</td>
+</tr>
 <table  width=980px align=center bgcolor=3a4eff >
     <tr>
 	   <td>
@@ -11,7 +16,7 @@ USN &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp&nbsp: &nbsp &nbsp<input type
 <a href="resetp.php" style="text-decoration:none"><font color=red>forgot your password?</a></font>
 <br><br><center><input type="submit" name="submit" value="LOGIN"></center>
 </form>
-Not Yet SIGNED UP?THEN GO <a href="resetp.php" style="text-decoration:none"><font color=green>HERE..</a></font>			
+Not Yet SIGNED UP?THEN GO <a href="sign.php" style="text-decoration:none"><font color=green>HERE..</a></font>			
 </div>
 
 
@@ -23,6 +28,7 @@ Not Yet SIGNED UP?THEN GO <a href="resetp.php" style="text-decoration:none"><fon
 </div>
 </tr>
 </td>
+</table>
 </body> 
  <style>
 /* mouse over link */
@@ -46,3 +52,4 @@ a:hover {
 }
 
 </style>
+
