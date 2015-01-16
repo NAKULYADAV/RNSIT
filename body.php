@@ -17,6 +17,16 @@ USN &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp&nbsp: &nbsp &nbsp<input type
 <br><br><center><input type="submit" name="submit" value="LOGIN"></center>
 </form>
 Not Yet SIGNED UP?THEN GO <a href="sign.php" style="text-decoration:none"><font color=green>HERE..</a></font>			
+<img src="images/duck.jpg" alt=duck></img>
+<br>NO OF MEMBERS ONLINE : 
+<?php
+
+
+
+
+
+
+?>
 </div>
 
 

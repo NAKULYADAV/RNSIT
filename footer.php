@@ -7,9 +7,10 @@
 			
 				
 	<center>	<a href="first.php" style="text-decoration:none">&nbspABOUT RNSIT&nbsp &nbsp </a> 
-				<a href="act.php" style="text-decoration:none"> FACEBOOK &nbsp </a>  
-				<a href="notes.php" style="text-decoration:none">  GOOGLE+ &nbsp &nbsp </a>
-				<a href="THANKS.php" style="text-decoration:none"> MEMBERS </a></center>
+				<a href="THANKS.php" style="text-decoration:none"> MEMBERS &nbsp &nbsp </a>
+		<font color=red>FOLLOW US ON </font>&nbsp: <a href="act.php" style="text-decoration:none">&nbsp &nbsp  FACEBOOK &nbsp </a>  
+				<a href="notes.php" style="text-decoration:none">  GOOGLE+ &nbsp &nbsp </a></center>
+				
    </tr>
 	   </td>
 </table>
