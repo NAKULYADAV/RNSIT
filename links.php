@@ -1,5 +1,5 @@
 <table height=15px width=965px align=center>
-    <tr>
+   
 	   <td>
 <div class="menu" id=nav2>
 			
@@ -12,7 +12,7 @@
 				<a href="poseq.php" style="text-decoration:none"> POSE QUESTION &nbsp &nbsp </a>
 				<a href="faculty.php" style="text-decoration:none"> FACULTY &nbsp &nbsp </a>
 				<a href="THANKS.php" style="text-decoration:none"> THANKS </a>
-   </tr>
+   
 	   </td>
 </table>
 </body> 

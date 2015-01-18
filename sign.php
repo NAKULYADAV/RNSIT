@@ -1,14 +1,30 @@
+<html>
+<body bgcolor=666666>
 <?php
-$to='nakul.yadava@gmail.com';
-$subject='testing sucess';
-$message='finally got it';
-$headers='From:akshayprasad008@gmail.com'."\r\n".
-         'Reply-To:akshayprasad008@gmail.com'."\r\n".
-		 'MIME-Version:1.0'."\r\n".
-		 'Content-type:text/html; charset=iso-8859-1'."\r\n".
-		 'X-Mailer: PHP/'. phpversion();
-if(mail($to,$subject,$message,$headers))
-   echo "sucess";
-else
-   echo "failure";
+include('header.php');
 ?>
+<table height=1px >
+<td>
+</td>
+</table>
+<center>
+<table width=980px bgcolor=0066cc >
+<td>
+<form action="resetp.php" method="GET">
+<center>
+<table width=500px bgcolor=0066cc >
+<td><br>
+FIRST NAME &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp&nbsp &nbsp &nbsp : &nbsp &nbsp &nbsp <input type="text" value="" name="fname" placeholder="First name"  pattern="(.){3,25}" align="right" required/>
+<br><br>LAST NAME &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp : &nbsp &nbsp &nbsp <input type="text" value="" name="lname" placeholder="Last name" align="right"/>
+<br><br>EMAIL ID &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp: &nbsp &nbsp &nbsp <input type="email" value="" name="email" placeholder="your@email.com"  align="right" required/>
+<!--<br><br>PASSWORD &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp&nbsp &nbsp &nbsp &nbsp &nbsp: &nbsp &nbsp &nbsp <input type="password" value="" name="name" placeholder="PASSWORD" align="right" required/>
+<br><br>CONFIRM PASSWORD &nbsp &nbsp &nbsp: &nbsp &nbsp &nbsp <input type="password" value="" name="name" align="right" required/>-->
+<br><br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp&nbsp
+<input type="submit" name="submit" value="NEXT >"></center></center>
+</td>
+</table>
+</td>
+</table>
+
+</body>
+</html>

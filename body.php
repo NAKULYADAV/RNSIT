@@ -9,11 +9,11 @@
 	   <td>
 	   <div id="nav">
 <h3><center><font color=green> LOGIN </font></h3></center>
-		<form action="insertreply.php" method="POST">
-USN &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp&nbsp: &nbsp &nbsp<input type="text" value="1RN" name="name" align="right"/>
+		<form action="insertreply.php"  id="form-id" method="POST" >
+USN &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp&nbsp: &nbsp &nbsp<input type="text" value="1RN" name="usn" align="right"/>
 <br><br>PASSWORD &nbsp &nbsp: &nbsp &nbsp<input type="password" value="" name="name" align="right"/>
 <br> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp&nbsp
-<a href="resetp.php" style="text-decoration:none"><font color=red>forgot your password?</a></font>
+<a href="resetp.php?fname=nakul"  style="text-decoration:none"><font color=red>forgot your password?</a></font>
 <br><br><center><input type="submit" name="submit" value="LOGIN"></center>
 </form>
 Not Yet SIGNED UP?THEN GO <a href="sign.php" style="text-decoration:none"><font color=green>HERE..</a></font>			
