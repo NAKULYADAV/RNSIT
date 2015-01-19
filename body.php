@@ -13,7 +13,7 @@
 USN &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp&nbsp: &nbsp &nbsp<input type="text" value="1RN" name="usn" align="right"/>
 <br><br>PASSWORD &nbsp &nbsp: &nbsp &nbsp<input type="password" value="" name="name" align="right"/>
 <br> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp&nbsp
-<a href="resetp.php?fname=nakul"  style="text-decoration:none"><font color=red>forgot your password?</a></font>
+<a href="resetps.php?fname=nakul"  style="text-decoration:none"><font color=red>forgot your password?</a></font>
 <br><br><center><input type="submit" name="submit" value="LOGIN"></center>
 </form>
 Not Yet SIGNED UP?THEN GO <a href="sign.php" style="text-decoration:none"><font color=green>HERE..</a></font>			
