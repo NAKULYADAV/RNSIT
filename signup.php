@@ -3,7 +3,7 @@ $dbuser="root";
 $dbpass="";
 $dbname="login";
 $dberror="oops could't been able connect to the server";
-$dbconn=mysqli_connect($dbhost,$dbuser,$dbpass,$dbname) or die(header("Location: http://localhost/RNSIT/sign.php"));
+$dbconn=mysqli_connect($dbhost,$dbuser,$dbpass,$dbname) or die(header("Location: http:/RNSIT/sign.php"));
   
     $fname=$_GET['fname'];  
     $lname=$_GET['lname'];
@@ -19,11 +19,11 @@ $dbconn=mysqli_connect($dbhost,$dbuser,$dbpass,$dbname) or die(header("Location:
 	if ($dbconn->query($sql) === TRUE) {}
  	else 
 	{ $loc=1;
-      header("Location: http://localhost/RNSIT/pop2.php");
+      header("Location: http:/RNSIT/pop2.php");
     }
 
     $dbconn->close();
   }
   if($loc==0)
-   header("Location: http://localhost/RNSIT/rccode.php");
+   header("Location: http:/RNSIT/rccode.php");
 ?>

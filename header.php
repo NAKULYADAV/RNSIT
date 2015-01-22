@@ -1,4 +1,5 @@
 <html>
+<meta name="google-site-verification" content="Hs8I9MoxK4nO_uDo66MISS0VUmlxAWkuFOE4-zIGnA8" />
 <body bgcolor=666666>         
 <table width=100% bgcolor=0066cc >
 <td>

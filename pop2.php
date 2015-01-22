@@ -8,7 +8,7 @@ alert("please enter valid details!\nthis details has been previously registered!
 sleep(2);
 ?>
 </script>
-<meta http-equiv="refresh" content="0; url=http://localhost/RNSIT/sign.php" />
+<meta http-equiv="refresh" content="0; url=http:/RNSIT/sign.php" />
 </head>
 <body>
  

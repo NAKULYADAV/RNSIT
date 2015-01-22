@@ -3,7 +3,7 @@ $dbuser="root";
 $dbpass="";
 $dbname="login";
 $dberror="oops could't been able connect to the server";
-$dbconn=mysqli_connect($dbhost,$dbuser,$dbpass,$dbname) or die(header("Location: http://localhost/RNSIT/sign.php"));
+$dbconn=mysqli_connect($dbhost,$dbuser,$dbpass,$dbname) or die(header("Location: http:/RNSIT/sign.php"));
  
    $usn=$_GET['usn'];  
    $ccode=rand(1000,9999);
@@ -19,6 +19,6 @@ $dbconn=mysqli_connect($dbhost,$dbuser,$dbpass,$dbname) or die(header("Location:
     
     $dbconn->close();
   
-     header("Location: http://localhost/RNSIT/rrcode.php");
+     header("Location: http:/RNSIT/rrcode.php");
   }
 ?>

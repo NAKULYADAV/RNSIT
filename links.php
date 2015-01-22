@@ -9,7 +9,7 @@
 				<a href="notes.php" style="text-decoration:none">  NOTES &nbsp &nbsp </a>
 				<a href="pqp.php" style="text-decoration:none"> P.Q.PAPERS &nbsp &nbsp </a>
 				<a href="assign.php" style="text-decoration:none"> ASSIGNMENT &nbsp &nbsp </a>
-				<a href="poseq.php" style="text-decoration:none"> POSE QUESTION &nbsp &nbsp </a>
+				<a href="conn.php" style="text-decoration:none"> CONNECT &nbsp &nbsp </a>
 				<a href="faculty.php" style="text-decoration:none"> FACULTY &nbsp &nbsp </a>
 				<a href="THANKS.php" style="text-decoration:none"> THANKS </a>
    

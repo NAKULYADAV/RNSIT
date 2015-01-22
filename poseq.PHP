@@ -1,7 +1,6 @@
 <?php
 include('header.php');
 ?>
-
 <html>
 	<head>
 		<title>Pose Questions</title>

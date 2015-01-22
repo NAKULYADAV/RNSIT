@@ -8,7 +8,7 @@ $dbuser="root";
 $dbpass="";
 $dbname="login";
 $dberror="oops could't been able connect to the server";
-$dbconn=mysqli_connect($dbhost,$dbuser,$dbpass,$dbname) or die(header("Location: http://localhost/RNSIT/sign.php"));
+$dbconn=mysqli_connect($dbhost,$dbuser,$dbpass,$dbname) or die(header("Location: http:/RNSIT/sign.php"));
  
    $ccode=$_GET['ccode'];  
    $pass=$_GET['pass'];
@@ -49,13 +49,13 @@ VALUES ('$fname','$lname','$usn','$email','$pass')";
             }
 	     }
 		 else
-		  header("Location: http://localhost/RNSIT/pop3.php");
+		  header("Location: http:/RNSIT/pop3.php");
 	    $dbconn->close();
 	  }
 
      } 
 	  else
-       header("Location: http://localhost/RNSIT/pop1.php");
+       header("Location: http:/RNSIT/pop1.php");
     
    
    //header("Location: http://localhost/RNSIT/logedin.php");
