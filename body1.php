@@ -11,7 +11,7 @@
 	   <div id="nav">
 <h3><center><font color=green> WELCOME </font></h3></center>
 <?php
-session_start();
+
 echo $_SESSION["fname"];
 echo $_SESSION["lname"];
 echo $_SESSION["user"];

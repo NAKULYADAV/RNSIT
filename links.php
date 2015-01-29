@@ -1,7 +1,7 @@
 <table height=15px width=965px align=center>
    
 	   <td>
-<div class="menu" id=nav2>
+<div  id=nav2>
 			
 				
 				<a href="first.php" style="text-decoration:none">&nbsp HOME &nbsp &nbsp </a> 
