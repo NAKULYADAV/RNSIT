@@ -1,5 +1,9 @@
 <?php
 include('header.php');
+ session_start();
+ if(!isset($_COOKIE['user'])) {
+    header("Location: /index.php");
+}
 ?>
 <html>
 	<head>
@@ -17,20 +21,22 @@ include('header.php');
      <tr>
 	 <td>
 	 <fieldset >
-		<form action="submit.php" method="POST"><br>
+		<form action="submit.php" method="GET"><br>
 	    Select the Department: <br><br>
-            <input type="radio" name="department" value="General" checked/>General<br>		
-            <input type="radio" name="department" value="Electronics and Communication"/>Electronics and Communication<br>
-			<input type="radio" name="department" value="Computer Science"/>Computer Science<br>
-			<input type="radio" name="department" value="Information Science"/>Information Science<br>
-			<input type="radio" name="department" value="Mechanical"/>Mechanical<br>
-			<input type="radio" name="department" value="Instrumentation Technology"/>Instrumentation Technology<br>
-			<input type="radio" name="department" value="Civil"/>Civil<br>
-			<input type="radio" name="department" value="Electronics and Communication"/>Electronics and Communication<br>
+            <input type="radio" name="department" value="gn" checked/>General<br>		
+            <input type="radio" name="department" value="ec"/>Electronics and Communication<br>
+			<input type="radio" name="department" value="cs"/>Computer Science<br>
+			<input type="radio" name="department" value="is"/>Information Science<br>
+			<input type="radio" name="department" value="me"/>Mechanical<br>
+			<input type="radio" name="department" value="it"/>Instrumentation Technology<br>
+			<input type="radio" name="department" value="ce"/>Civil<br>
+			<br>
 			What's your Question? <br><br>
 
-		    <textarea name="comment" style="width: 300px; height: 150px;" placeholder="enter your QUESTION here...max in 140 characters"></textarea><br><br>
-			<input type="checkbox" name="mail" value="Notify"/>Notify  me via mail when answered<br>
+		    <textarea name="question" style="width: 300px; height: 150px;" placeholder="enter your QUESTION here...max in 140 characters"></textarea><br><br>
+			<input   type="hidden" value="0" name="smail">
+			<input type="checkbox" name="smail" value="1"/>Notify  me via mail when answered<br><br>
+			
 			<input type="submit" name="submit" value="Submit"/><br>
 		</form>
 	</fieldset >

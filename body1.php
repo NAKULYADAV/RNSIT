@@ -12,8 +12,7 @@
 <h3><center><font color=green> WELCOME </font></h3></center>
 <?php
 
-echo $_SESSION["fname"];
-echo $_SESSION["lname"];
+
 echo $_SESSION["user"];
 ?>
 <br><br>

@@ -1,4 +1,8 @@
 <?php
+$dp=$_GET['department'];  
+$txt=$_GET['question'];
+$smail=$_GET['smail'];
+
 $dbhost="localhost";
 $dbuser="root";
 $dbpass="";
@@ -16,13 +20,29 @@ $dbconn=mysqli_connect($dbhost,$dbuser,$dbpass,$dbname) or die(header("Location:
 	       if($dbfetch==false) echo $dberror;
 		   $row=mysqli_fetch_assoc($dbfetch);
 		 
-		   $n=$row['count(*)']+1;
+		   $qno=$row['count(*)']+1;
+		   mkdir("connect/$dp/qus$qno");
+		
+	   
+		  
 		   
-	 }
-		   
-for($i=1;$i<$n;$i++){
-$myfile = fopen("connect/cs/qus$i/qus.txt", "r") or die("Unable to open file!");
-echo fgets($myfile);
+           $usn=$_COOKIE['user'];
+          
+           $sql = "INSERT INTO connect(usn)
+           VALUES ('$usn')";
+		   if ($dbconn->query($sql) === TRUE) 
+			{
+              echo "sucess";
+            }  
+	        else 
+			{
+             echo "error ";
+            }
+	  }
+
+$dbconn->close();
+
+$myfile = fopen("connect/$dp/qus$qno/qus.txt", "w") or die("Unable to open file!");
+fwrite($myfile, $txt);
 fclose($myfile);
-echo "<td><a href='update$i.php'>view</a></td>";}
-?>
+?> 

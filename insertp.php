@@ -57,8 +57,10 @@ VALUES ('$fname','$lname','$usn','$email','$pass')";
 	  else
        header("Location: http:/RNSIT/pop1.php");
     
-   
-   //header("Location: http://localhost/RNSIT/logedin.php");
+   $cookie_name = "user";
+   $cookie_value = $usn;
+   setcookie($cookie_name, $cookie_value, time()+30000000,'/'); // 86400 = 1 day
+   header("Location: http://localhost/RNSIT/secure.php");
 	  
  
 ?>
