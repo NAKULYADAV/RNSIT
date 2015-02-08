@@ -24,13 +24,29 @@ Not Yet SIGNED UP?THEN GO <a href="sign.php" style="text-decoration:none"><font 
 <img src="images/duck.jpg" alt=duck></img>
 <br>NO OF MEMBERS ONLINE : 
 <?php
+$dbhost="localhost";
+$dbuser="root";
+$dbpass="";
+$dbname="login";
+$dberror="oops could't been able connect to the server";
+$dbconn=mysqli_connect($dbhost,$dbuser,$dbpass,$dbname) or die();
+ 
+       if($dbconn==true) 
+      {   
 
-
-
-
-
-
+          $dbquery="SELECT count(*) FROM studentlogin
+			  where chon >= NOW() - 300
+	      ";
+	     $dbfetch=mysqli_query($dbconn,$dbquery);
+	     if($dbfetch==false) echo $dberror;
+		 $row=mysqli_fetch_assoc($dbfetch);
+		 
+		echo $row['count(*)'];
+		  
+     }
+ 
 ?>
+
 </div>
 
 

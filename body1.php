@@ -24,19 +24,29 @@ include('stat.php');
 <img src="images/duck.jpg" alt=duck></img>
 <br>NO OF MEMBERS ONLINE : 
 
-
-
 <?php
-if(!isset($_COOKIE['user'])) {
-      echo "Cookie named '" . $cookie_name . "' is not set!";
-} else {
-      echo "Cookie '" . 'user'. "' is set!<br>";
-      echo "Value is: " . $_COOKIE['user'];
-}
+$dbhost="localhost";
+$dbuser="root";
+$dbpass="";
+$dbname="login";
+$dberror="oops could't been able connect to the server";
+$dbconn=mysqli_connect($dbhost,$dbuser,$dbpass,$dbname) or die();
+ 
+       if($dbconn==true) 
+      {   
+
+          $dbquery="SELECT count(*) FROM studentlogin
+			  where chon >= NOW() - 300
+	      ";
+	     $dbfetch=mysqli_query($dbconn,$dbquery);
+	     if($dbfetch==false) echo $dberror;
+		 $row=mysqli_fetch_assoc($dbfetch);
+		 
+		echo $row['count(*)'];
+		  
+     }
+ 
 ?>
-
-
-
 
 </div>
 

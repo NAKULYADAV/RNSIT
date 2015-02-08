@@ -33,7 +33,7 @@ include('header.php');
 			<br>
 			What's your Question? <br><br>
 
-		    <textarea name="question" style="width: 300px; height: 150px;" placeholder="enter your QUESTION here...max in 140 characters"></textarea><br><br>
+		    <textarea name="question" style="width: 300px; height: 150px;" placeholder="enter your QUESTION here...max in 140 characters" required></textarea><br><br>
 			<input   type="hidden" value="0" name="smail">
 			<input type="checkbox" name="smail" value="1"/>Notify  me via mail when answered<br><br>
 			
